@@ -7,22 +7,22 @@ import java.util.Scanner;
  */
 public class Propuesto008 {
     /*
-    La compañía de autobuses “La curva loca” requiere determinar el costo que
-    tendrá el boleto de un viaje sencillo, esto basado en los kilómetros por
-    recorrer y en el costo por kilómetro. 
+    Se requiere determinar el tiempo que tarda una persona en llegar de una 
+    ciudad a otra en bicicleta, considerando que lleva una velocidad constante. 
     */
     
     public static void main(String[] args) {
-        System.out.println("*** Programa que determina el costo de un boleto de"
-                + " viaje sencillo ***");
+        System.out.println("*** Programa que determina el tiempo que tarda en llegar"
+                + "una persona a otra ciudad en bicicleta ***");
         
         Scanner leer = new Scanner(System.in);
         
         System.out.print("Ingresa los kilómetros por recorrer: ");
         int km = leer.nextInt();
-        System.out.print("Ingresa el costo por kilómetro :$");
-        float costo = leer.nextFloat();
+        System.out.print("Ingresa la velocidad expresada en km/10: ");
+        float velocidad = leer.nextFloat();
+        float tiempo = km / velocidad;
         
-        System.out.println("El costo del boleto es: $" + (km * costo));
+        System.out.println("El tiempo que tardará en llegar es: " + tiempo);
     }   
 }

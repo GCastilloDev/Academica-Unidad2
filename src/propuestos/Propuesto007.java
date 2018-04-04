@@ -1,10 +1,11 @@
 package propuestos;
 import java.util.Scanner;
+
 /**
  *
  * @author Gustavo
  */
-public class Propuesto007 {
+public class Propuesto007{
     /*
     La compañía de autobuses “La curva loca” requiere determinar el costo que
     tendrá el boleto de un viaje sencillo, esto basado en los kilómetros por
@@ -12,17 +13,16 @@ public class Propuesto007 {
     */
     
     public static void main(String[] args) {
+        System.out.println("*** Programa que determina el costo de un boleto de"
+                + " viaje sencillo ***");
         
-        System.out.println("*** Programa que calcula el costo de un boleto de viaje"
-                + " sencillo ***\n");
+        Scanner leer = new Scanner(System.in);
         
-        Scanner n = new Scanner(System.in);
+        System.out.print("Ingresa los kilómetros por recorrer: ");
+        int km = leer.nextInt();
+        System.out.print("Ingresa el costo por kilómetro :$");
+        float costo = leer.nextFloat();
         
-        System.out.print("¿Qué kilometraje recorrerá?: ");
-        int km = n.nextInt();
-        System.out.print("¿Cuál es el costo por km?: $");
-        float costo = n.nextFloat();
-        
-        System.out.println("El costo del boleto es: $" + km*costo);
-    }
+        System.out.println("El costo del boleto es: $" + (km * costo));
+    }   
 }
