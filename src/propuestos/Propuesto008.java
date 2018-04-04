@@ -19,7 +19,7 @@ public class Propuesto008 {
         
         System.out.print("Ingresa los kilómetros por recorrer: ");
         int km = leer.nextInt();
-        System.out.print("Ingresa la velocidad expresada en km/10: ");
+        System.out.print("Ingresa la velocidad expresada en km/hr: ");
         float velocidad = leer.nextFloat();
         float tiempo = km / velocidad;
         
